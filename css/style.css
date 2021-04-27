@@ -3,7 +3,6 @@ html {
   }
   
   .header {
-    background-color: #9933cc;
     color: #ffffff;
   }
   
@@ -106,22 +105,43 @@ div.topnav {
 
 
 
-div.bottomnav {
+.bottomnav ul{
     list-style-type: none;
     margin: 0;
-    padding: 0px 3% 0px 3%;
     overflow: hidden;
-    background-color: #f5f5f5;
+    background-color:#f5f5f5;
+    color:black;
   }
+
   
 
 
-div.bottomnav >div {
-    display:block;  
-    float: none;
-    padding: 14px 16px;
-}
+  .bottomnav ul.left{
+      font-size: 13px;
+  }
 
+  .bottomnav ul.right{
+    font-size: 11px;
+
+}
+  
+  .bottomnav ul>li {
+  margin:0px 0px 0px 0px;
+  float: none;}
+  
+  .bottomnav ul>li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+  }
+  
+  .bottomnav >ul li a:hover {background-color: white;}
+  
+  
+
+  
 .username{
     font-size: 15px;
     text-align: right;
@@ -204,23 +224,35 @@ div.bottomnav >div {
   }
  
 @media screen and (min-width: 400px) {
-    
-
-    div.bottomnav >div {float: left;}
-    div.bottomnav >div.right {float: right;}
     .searchBar{
         width:340px;
     }
+
+    .bottomnav>ul.left li {
+    float: left;
+    font-size: 10px;}
+
+    .bottomnav>ul.right li {
+        float: right;
+    }
+
+    .bottomnav>ul.left{
+        width:400px;
+        margin: 0px auto 0px auto;
+    }
+
+    .bottomnav>ul.right{
+        width:270px;
+        margin: auto;
+    }
     
+   
+    .bottomnav>ul li {margin:0px 0px 0px 3%;}
 
   }
 
 @media screen and (min-width: 768px) {
     
-
-    div.bottomnav >div {float: left;}
-    div.bottomnav >div.right {float: right;}
-
     .logoUser .searchBar{
         display:block;
         float: left;
@@ -256,4 +288,39 @@ div.bottomnav >div {
         font-size: 11px;
     }
 
+    .bottomnav>ul.right li{float:right;} 
+
+    .bottomnav>ul.left{
+        float: left;
+    }
+    .bottomnav>ul.right {
+        float: right;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .bottomnav{
+    height: 40px;
+    }
+
+    .bottomnav>ul.left li a{
+        font-size: 13px;
+        padding: 12px 0px 12px 0px;
+    }
+
+    .bottomnav>ul.left{
+        width:440px;
+      
+    }
+    
+
+
   }
+
+  .bottomnav{
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 0px 3% 0px 3%;
+}
