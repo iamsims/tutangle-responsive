@@ -1,0 +1,259 @@
+html {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  
+  .header {
+    background-color: #9933cc;
+    color: #ffffff;
+  }
+  
+div.topnav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7dd9e8;
+    padding:17px 3% 15px 3%;
+    
+  }
+
+.logo{
+    margin:auto;
+    width:60%;
+    height:49px;
+    float:left;
+}
+
+.logoUser{
+    height:49px;
+}
+
+.logo img{
+    height:auto;
+    max-width:100%;
+}
+
+.info{
+    width:30%;
+    height:50px;
+    float:right;
+    position: relative;
+    color:black;
+}
+
+.searchBar{
+    margin:20px auto 9px auto;
+    height: 24px;
+    width: 90%;
+    max-width: 340px;
+}
+
+.searchInput{
+	background: url("../images/search-bar.png"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	width: 81%;
+    max-width:276px;
+	float: left;
+}
+
+.centerv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, 50%);
+  }
+
+.searchInput span img{
+    max-width: 100%;
+    width: 4%;
+}
+
+.searchInput input{
+	width: 86%; 
+	background-color: transparent; 
+	border: 0 solid; 
+	padding: 3px 8px;
+	font-size: 10px;
+}
+
+
+.searchButton a{
+    text-decoration: none;
+    color:white;
+    font-size: 8px;
+    width:100%;
+    line-height: 18px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.searchButton{
+    float: right;
+    margin: 0px 0px 0px 0px;
+    width:15%;
+    max-width:52px;
+    background-image: url("../images/search-btn-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align:center;   
+}
+
+
+
+div.bottomnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 3% 0px 3%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  
+
+
+div.bottomnav >div {
+    display:block;  
+    float: none;
+    padding: 14px 16px;
+}
+
+.username{
+    font-size: 15px;
+    text-align: right;
+    height:25px;
+    float: right;
+    padding: 0px 2px 0px 0px;
+}
+ 
+
+
+.dropbtn {
+    background-color:black;
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    height:25px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:#FFFFFF;
+  }
+
+
+.logoUser .searchBar{
+    display:none;
+}
+
+.info .options{
+    display:none;
+}
+.options a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav-item {
+    display: inline-block;
+  }
+
+.nav-item:before {
+    content: "| ";
+  }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-item:first-child:before {
+    content: none;
+  }
+ 
+@media screen and (min-width: 400px) {
+    
+
+    div.bottomnav >div {float: left;}
+    div.bottomnav >div.right {float: right;}
+    .searchBar{
+        width:340px;
+    }
+    
+
+  }
+
+@media screen and (min-width: 768px) {
+    
+
+    div.bottomnav >div {float: left;}
+    div.bottomnav >div.right {float: right;}
+
+    .logoUser .searchBar{
+        display:block;
+        float: left;
+        width:40%;
+        float:left;
+        padding:0px 0px 0px 30px;
+    }
+
+    .logo{
+        width:20%;
+    }
+
+    .logo img{
+        height:49px;
+    }
+
+    .topnav > .searchBar{
+        display: none;
+    }
+    
+    .info .dropdown{
+        display: none;
+    }
+
+    .info{
+        width: 148px;
+    } 
+
+    .info .options{
+        display:block;
+        height: 25px;
+        float:right;   
+        font-size: 11px;
+    }
+
+  }
