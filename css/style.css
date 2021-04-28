@@ -224,10 +224,13 @@ div.topnav {
   }
 
 .RecentSearches{
-    width: 95%;
-    margin: 30px auto 30px auto;
-    background-color: #f2f2f2;
-    vertical-align: top;
+  background-color:  #f2f2f2;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  width: 95%;
+  float: left;
+  margin: 30px 2.5% 30px 2.5%;
 }
 
 .title{
@@ -276,11 +279,16 @@ a{
     text-decoration: none;
 }
 
+
+
 .Entries{
-    width: 95%;
-    height: 100%;
-    margin: 10px 2.5% 10px 2.5%;
-    float: left;
+  color: #ffffff;
+  font-size: 14px;
+  width: 95%;
+  float: left;
+  margin: 30px 2.5% 30px 2.5%;
+  color:black;
+
 }
 
 
@@ -424,6 +432,186 @@ div.section{
     position : relative;
    }
 
+.VideoTutorials{
+
+background-color:  #f2f2f2;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 14px;
+  width: 95%;
+  float: left;
+  margin: 30px 2.5% 30px 2.5%;
+}
+
+
+.search ul li:hover{
+	background-color: #fff;
+}
+
+.search li a{
+    color:black;
+}
+
+.video.search ul li{
+    height :35px;
+    line-height: 15px;
+    text-decoration: none;
+    width : 100%;
+    display:table;
+    padding:8px;
+    text-align: center;
+
+}
+
+
+.search ul{
+	font-size: 11px;    
+}
+
+
+ 
+.footer-wrapper{
+    background-color:#727272;
+    height: 45px;
+}
+
+.right-footer{
+    float:right;
+    width:20%;
+    height:100%;
+    font-size:5px;
+    color: #d3d3d3;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: right;
+}
+
+.left-footer ul {
+    white-space:nowrap;
+    height:100%;
+}
+
+.left-footer .item{
+    float:left;
+    font-size:5px;
+    display:table;
+    color: #d3d3d3;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.left-footer .item:before {
+    content: "\2022";
+    padding: 0px 4px 0px 4px;
+  }
+
+  .left-footer .item:first-child:before {
+    content: none;
+  }
+
+
+.footer-container{
+    padding:0px 3.2% 0px 3.2%;
+    height:100%;
+}
+
+.left-footer{
+    float:left;
+    width:80%;
+    height:100%;
+}
+
+
+.entry{
+    width:100%;
+    display: block;
+    border-bottom:1px solid #d8d8d8;
+}
+
+.entry-container{
+    width:100%;
+    display: block;
+    padding: 14px 0px 14px 0px;
+}
+
+.profile-pic{
+    text-align: left;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight:600;
+    
+}
+
+.profile-pic img{
+    margin: 0px 3px 0px 0px;
+    width:20%;
+    max-width:100%;
+    height:auto;
+    float:left;
+}
+
+.entry-info{
+    width: 100%;
+    height: 100%;
+}
+
+.row0{
+    height:12px;
+    width:100%;
+    text-align: left;
+    line-height: 16px;
+    font-size: 8px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+
+.row1{
+    height:14px;
+    width:100%;
+    text-align: left;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight:600;
+}
+
+.row2{
+    height:19px;
+    width:100%;
+    text-align: left;
+    line-height: 14px;
+    font-size: 9px;
+    padding-top: 5px;
+}
+
+.row3{
+    width:100%;
+    height: 13px;
+    line-height: 14px;
+    font-size: 9px;
+    text-align: left;
+}
+
+
+.entry-info .row0, .entry-info .row1{
+    display:none;
+}
+.entry-author{
+    color:#4eafc0;
+    font-weight:600;
+}
+.entry-subscription-status{
+    color:#6e9721;
+    font-weight:600;
+}
+
+.topic-box{
+    color:#4eafc0;
+    font-weight:600;
+}
+
+
+
 
  
 @media screen and (min-width: 400px) {
@@ -452,11 +640,15 @@ div.section{
     .bottomnav>ul li {margin:0px 0px 0px 3%;}
 
     .RecentSearches{
-        width: 40%;
-        float : left;
-        max-width: 197px;
-        margin: 30px 1% 30px 2%;
+        width: 33%;
+        margin: 30px 2% 30px 1%;
  
+    }
+
+    .Entries{
+        width: 60%;
+        margin: 30px 2% 30px 1%;
+
     }
 
   }
@@ -524,8 +716,125 @@ div.section{
         width:440px;
       
     }
+    .lower-search{
+        height: 500px;
+    
+    }
+
+    /* .body-wrapper{
+        max-width: 938px;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    .RecentSearches{
+        width: 18%; /*194*/
+        margin: 30px 2% 30px 1%;
+    }
+
+    .Entries{
+        width: 58%;
+        margin: 30px 1% 30px 1%;
+    }
+
+    .VideoTutorials{
+        width: 16%; /*176*/
+        margin: 30px 2% 30px 1%;
+
+    }
+
+
+
+    .footer-wrapper{
+        background-color:#727272;
+        height: 45px;
+    }
+    
+    .right-footer{
+        width:82px;
+        font-size:9px;
+
+    }
+    
+    
+    .left-footer .item{
+        font-size:9px;
+    }
+    
+    
+    .left-footer{
+        width:323px;
+    }
+
+
+
+    .entry{
+        width:100%;
+        height: 100px;
+        display: block;
+        border-bottom:1px solid #d8d8d8;
+    }
+    
+    .entry-container{
+        width:100%;
+        height:100%;
+        display: block;
+        padding: 15px 0px 14px 0px;
+    }
+    
+    
+    .row0{
+        font-size: 10px;
+    
+    }
+    
+    .row1{
+        font-size: 13px;
+    }
+    
+    .row2{
+        font-size: 11px;
+    }
+    
+    .row3{
+        font-size: 11px;
+    }
     
 
+.profile-pic img{
+    margin: 0px 1px 0px 0px;
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
+
+.profile-pic{
+    width: 10%;
+    float: left;
+}
+
+.entry-info{
+    width: 90%;
+    height: 100%;
+    float: right;
+    padding: 0px 0px 0px 2px;
+}
+
+
+.entry-info .row0, .entry-info .row1{
+    display:block;
+}
+
+.profile-pic p, .entry-container>.row0 {
+    display:none;
+}
+
+
+
+
+
+    
 
   }
 
